@@ -7,6 +7,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.doglist.R
 import com.example.doglist.data.remote.APIService
 import com.example.doglist.databinding.ActivityMainBinding
 import com.example.doglist.ui.adapter.DogAdapter
@@ -72,7 +73,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     }
 
     private fun showError() {
-        Toast.makeText(this, "ha ocurrido un error", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.toast_message), Toast.LENGTH_SHORT).show()
     }
 
     override fun onQueryTextSubmit(query:String?): Boolean {
