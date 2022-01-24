@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DogList</string>
+    <string name="toast_message">ha ocurrido un error</string>
 </resources>
